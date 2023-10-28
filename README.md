@@ -21,7 +21,7 @@ To run the microservices using Docker Compose, follow these steps:
 2. Navigate to the project directory:
 
 ```bash
-docker-compose build
+cd decoupling-microservices
 ```
 3. Build the Docker images for the microservices:
 
