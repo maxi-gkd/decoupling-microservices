@@ -1,6 +1,6 @@
 # Decoupling Microservices with Docker Compose
 
-This repository contains a sample project that demonstrates how to decouple microservices using Docker Compose. The project consists of two microservices: a producer and a consumer, which communicate via Apache Kafka.
+This project showcases how to decouple microservices using Apache Kafka. It includes two microservices - a SpringBoot producer and a consumer.
 
 ## Prerequisites
 
