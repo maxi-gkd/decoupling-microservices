@@ -5,9 +5,10 @@ WORKDIR /app
 COPY pom.xml .
 RUN mvn dependency:go-offline
 
+COPY . /app
 RUN mvn package
 
-FROM amazoncorretto:11-alpine3.15
+FROM openjdk:11-jre
 
 COPY --from=build /app/target/producer-1.0-SNAPSHOT.jar /app/producer.jar
 
