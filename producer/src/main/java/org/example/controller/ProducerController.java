@@ -1,7 +1,7 @@
 package org.example.controller;
 
 import org.example.service.KafkaProducerService;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,7 +14,7 @@ public class ProducerController {
         this.producerService = producerService;
     }
 
-    @GetMapping("/send")
+    @PostMapping("/send")
     public void sendToKafka() {
         producerService.produceMessage();
     }
